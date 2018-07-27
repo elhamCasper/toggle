@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Toggle</title>
+
+    <!-- BOOTSTRAP 3 -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
+
+    <!-- BOOTSTRAP 4 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+
+    <!-- Optional theme -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous"> -->
+
+    <!-- Latest compiled and minified JavaScript -->
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src='https://code.jquery.com/jquery-3.3.1.js'></script>
+    <!-- <script src="js/incrementing.js"></script> -->
+    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+    <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("input[type=checkbox]#event").change(function() {
+                if ($(this).prop("checked") == true) {
+                    //run code
+                    // alert('Yes ' + $(this).val() + '  allowed');
+                } else {
+                    //run code
+                    // alert('No smoking allowed');
+                }
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+    <div id="page-wrap">
+
+        <h1>Toggle</h1>
+        <div class="form-group" col-md-6>
+            <p>Set rules for your guest</p>
+            <div class="form-group" col-md-2>
+                <label for="name" style="float:left;">Smoking allowed</label>
+                <input type="checkbox" style="float:right; margin-top: 10px;" data-size="mini" checked data-toggle="toggle" data-onstyle="berjaya" data-offstyle="gagal" data-style="round" data-on="Yes" data-off="No" name="smoking" id="event" value="Smoke">
+            </div>
+        </div>
+
+        <div class="form-group" col-md-6>
+            <label for="name">Events or parties allowed</label>
+            <div class="form-group" col-md-2>
+                <input type="checkbox" data-size="mini" unchecked data-toggle="toggle" data-onstyle="berjaya" data-offstyle="gagal" data-on="Yes" data-off="No" name="event" id="event" value="">
+            </div>
+        </div>
+
+        <div class="form-group" col-md-6>
+            <label for="name">Suitable for children (2-12) </label>
+            <input type="checkbox" data-size="mini" checked data-toggle="toggle" data-on="Yes" data-off="No" data-onstyle="berjaya" data-offstyle="gagal" name="event" id="event" value="">
+        </div>
+
+        <div class="form-group" col-md-6>
+            <label for="name">Suitable for infants (Under 2 years) </label>
+            <input type="checkbox" data-size="mini" checked data-toggle="toggle" data-on="Yes" data-off="No" data-onstyle="berjaya" data-offstyle="gagal" name="event" id="event" value="">
+        </div>
+
+        <div class="form-group" col-md-6>
+            <label for="name">Suitable for pets </label>
+            <input type="checkbox" data-size="mini" unchecked data-toggle="toggle" data-on="Yes" data-off="No" data-onstyle="berjaya" data-offstyle="gagal" name="event" id="event" value="">
+        </div>
+
+    </div>
+
+</body>
+
+</html>
